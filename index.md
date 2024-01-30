@@ -7,6 +7,6 @@ Big data is the backbone of modern particle physics. Did you know that [CERN](ht
 
 Big data calls for extensive and creative data analysis techniques, making every particle physicist also a data scientist.
 
-I am a scientist, specifically a particle astrophysicist, searching for the elusive dark mattter at the University of British Columbia. I use the power of machine learning combined with statistics to extract the faintest hint of a dark matter signal from large, noisy data sets. To learn more, visit my [research page]({{'/my_research.md' | relative_url}})
+I am a scientist, specifically a particle astrophysicist, searching for the elusive dark mattter at the University of British Columbia. I use the power of machine learning combined with statistics to extract the faintest hint of a dark matter signal from large, noisy data sets. To learn more, visit my [research page]({{'/my_research' | relative_url}})
 
-Want to know how machine learning can help detect dark matter? Check out [this project page]({{'/dark_matter.md' | relative_url}})
+Want to know how machine learning can help detect dark matter? Check out [this project page]({{'/dark_matter' | relative_url}})
