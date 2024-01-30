@@ -3,7 +3,7 @@ title: About me
 ---
 
 <p align="center">
-  <img src="/assets/img/Profile.jpg"/>
+  <img width="33%" src="/assets/img/Profile.jpg"/>
 </p>
 
 I am a scientist by profession. I grew up in the South Indian state of Kerala, India and completed my Bachelor's degree in Engineering Physics at [NIT Calicut](https://nitc.ac.in/about-us) in 2019. I moved to the beautiful city of Vancouver in 2019 to start my PhD in physics at the University of British Columbia where I work with the SuperCDMS collaboration to find and study dark matter. SuperCDMS is a collaboration of 100+ scientists from universities and National labs from around the world and is currently building an improved experiment in one of the deepest underground facilities in the world, [SNOLAB](https://www.snolab.ca/about/about-snolab/). I'm involved in several aspects of the experiment with specific focus on data analysis, software and detector operations.
