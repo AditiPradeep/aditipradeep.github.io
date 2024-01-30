@@ -22,9 +22,8 @@ author: Aditi Pradeep
 navbar-links:
   About Me: "about_me"
   My Research: "finding_dm_with_ML"
-  Teaching: "course"
-  Coding:
-    - Dark matter: "dark_matter"
+  Projects:
+    - Dark matter stuff: "dark_matter"
     - Sudoku solver: "sudoku_solver"
 
 ################
