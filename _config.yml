@@ -21,6 +21,7 @@ author: Aditi Pradeep
 
 navbar-links:
   About Me: "about_me"
+  Blog: "blog"
   My Research: "my_research"
   Projects:
     - Dark matter stuff: "dark_matter"
