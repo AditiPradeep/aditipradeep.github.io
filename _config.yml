@@ -23,6 +23,7 @@ navbar-links:
   About Me: "about_me"
   Blog: "blog"
   My Research: "my_research"
+  Publications: "publications"
   Projects:
     - Software portfolio for SuperCDMS: "coding_for_supercdms"
     - Machine learning for Dark matter searches: "dark_matter"
