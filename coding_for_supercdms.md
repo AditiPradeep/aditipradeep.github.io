@@ -5,6 +5,14 @@ title: Select coding examples from SuperCDMS
 
 I am an active software developer for SuperCDMS's data processing packages and data acquisition packages. SuperCDMS uses C++ for its core packages which handles large amounts of data for computational efficiency. SuperCDMS analyses are done in both python (numpy, pandas, scipy, matplotlib) and  C++ ([ROOT's RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) which provides a nice python interface). All SuperCDMS softwares are privately owned and contain sensitive information which cannot be fully publically released. Therefore, I'm trying to provide a couple of snippets of my "software portfolio" instead to demonstrate my extensive experience coding for SuperCDMS for the past 5 years.
 
+# Python coding experience with SuperCDMS
+
+Our data is noisy and often times to study reconstruction algorithms, one has to simulate realistic noise. If one constructs the Power Spectral Density (PSD) of the noise, Monte Carlo sampling can be used to sample noise waveforms from the PSD. If there is correlation in noise between a few detector channels of interest a [cross PSD](https://en.wikipedia.org/wiki/Spectral_density#Cross_power_spectral_density) can be constructed and similarly sampled from to simulate more realistic noise waveforms. Here is a python package which wrote that performs this function: [Noise_gen repository](https://gitlab.com/AditiPradeep/noisegen).
+
+Most of our data analysis is run in jupyter environments on scientific computing acilities using common python libraries and some SuperCDMS specific libraries. Common tasks include regression of various quantities, optimization and data enrichment. Here is an example of a Machine learning task I performed: ML for dark matter searches] ({{ '/dark_matter'| relative_url}})
+
+# C++ coding experience with SuperCDMS
+
 ## Data processing packages
 
 SuperCDMS data is acquired in [Midas format](https://daq00.triumf.ca/MidasWiki/index.php/Main_Page), which is a commonly used data format in the particle physics community. The data acquired is transferred to the [scientific High Performance Comupting facility](https://sdf.slac.stanford.edu/public/doc/#/) at the Stanford Linear Accelerator Center (SLAC) for storage and processing. SuperCDMS data processing is handled by a group of packages and builds heavily on Object Oriented Programming at its core. Each package/sub-package has a well defined role which I demonstrate below with the cartoon I made for the documentation effort I led for these packages using gitlab CI/CD. Note that I also currently maintain the Gitlab documentation.
