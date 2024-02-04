@@ -7,9 +7,9 @@ I am an active software developer for SuperCDMS's data processing packages and d
 
 # Python coding experience with SuperCDMS
 
-Our data is noisy and often times to study reconstruction algorithms, one has to simulate realistic noise. If one constructs the Power Spectral Density (PSD) of the noise, Monte Carlo sampling can be used to sample noise waveforms from the PSD. If there is correlation in noise between a few detector channels of interest a [cross PSD](https://en.wikipedia.org/wiki/Spectral_density#Cross_power_spectral_density) can be constructed and similarly sampled from to simulate more realistic noise waveforms. Here is a python package which wrote that performs this function: [Noise_gen repository](https://gitlab.com/AditiPradeep/noisegen).
+Our data is noisy and often times to study reconstruction algorithms, one has to simulate realistic noise. If one constructs the Power Spectral Density (PSD) of the noise, Monte Carlo sampling can be used to sample noise waveforms from the PSD. If there is correlation in noise between a few detector channels of interest a [cross PSD](https://en.wikipedia.org/wiki/Spectral_density#Cross_power_spectral_density) can be constructed and similarly sampled from to simulate more realistic noise waveforms. Here is a python package which wrote that performs this function: [NoiseGen repository](https://gitlab.com/AditiPradeep/noisegen).
 
-Most of our data analysis is run in jupyter environments on scientific computing acilities using common python libraries and some SuperCDMS specific libraries. Common tasks include regression of various quantities, optimization and data enrichment. Here is an example of a Machine learning task I performed: ML for dark matter searches] ({{ '/dark_matter'| relative_url}})
+Most of our data analysis is run in jupyter environments on scientific computing acilities using common python libraries and some SuperCDMS specific libraries. Common tasks include regression of various quantities, optimization and data enrichment. Here is an example of a Machine learning task I performed: [ML for dark matter searches] ({{ '/dark_matter'| relative_url}})
 
 # C++ coding experience with SuperCDMS
 
