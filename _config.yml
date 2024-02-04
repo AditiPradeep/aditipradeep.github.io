@@ -24,7 +24,8 @@ navbar-links:
   Blog: "blog"
   My Research: "my_research"
   Projects:
-    - Dark matter stuff: "dark_matter"
+    - Software portfolio for SuperCDMS: "coding_for_supercdms"
+    - Machine learning for Dark matter searches: "dark_matter"
     - Sudoku solver: "sudoku_solver"
 
 ################

@@ -7,4 +7,5 @@ I am a scientist, specifically a particle astrophysicist, searching for the elus
 
 To learn more, visit my [research page]({{'/my_research' | relative_url}}) and [blog posts]({{ '/blog' | relative_url}}).
 
+Checkout my [software portfolio]({{'/coding_for_supercdms' | relative_url}}) and other [fun projects]({{'/sudoku_solver' | relative_url}}).
 Want to know how machine learning can help detect dark matter? Check out [this project page]({{'/dark_matter' | relative_url}})
