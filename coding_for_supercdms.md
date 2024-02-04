@@ -3,7 +3,7 @@ layout: page
 title: Select coding examples from SuperCDMS
 ---
 
-I am an active software developer for SuperCDMS's data processing packages and data acquisition packages. SuperCDMS uses C++ for its core packages which handles large amounts of data for computational efficiency. SuperCDMS analyses are done in both python (numpy, pandas, scipy, matplotlib) and  C++ ([ROOT's RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) which provides a nice python interface). All SuperCDMS softwares are privately owned and contain sensitive information which cannot be fully publically released. Therefore, I'm trying to provide a couple of snippets of my ``software portfolio" to demonstrate my extensive experience coding for SuperCDMS for the past 5 years.
+I am an active software developer for SuperCDMS's data processing packages and data acquisition packages. SuperCDMS uses C++ for its core packages which handles large amounts of data for computational efficiency. SuperCDMS analyses are done in both python (numpy, pandas, scipy, matplotlib) and  C++ ([ROOT's RDataFrame](https://root.cern/doc/master/classROOT_1_1RDataFrame.html) which provides a nice python interface). All SuperCDMS softwares are privately owned and contain sensitive information which cannot be fully publically released. Therefore, I'm trying to provide a couple of snippets of my "software portfolio" instead to demonstrate my extensive experience coding for SuperCDMS for the past 5 years.
 
 ## Data processing packages
 
@@ -15,7 +15,9 @@ BatCommon is the package where data analyses classes, data reading classes and u
 
 ![CDMSBats flow chart]({{'/assets/img/CDMSBats_flowchart.png' | relative_url}})
 
-Here I describe one avenue where I contributed extensively (about 2000+ lines of code additions). The new data for SuperCDMS will be taken with two different sampling frequencies in the same waveform (check figure below). In the figure, the waveform on the left has its tails on the left and right of the peak downsampled by a factor of 16 (by averaging every 16 data points). This "hybrid" waveform you get after downsampling is shown on the right. All our regression is performed in frequency domain with Fourier transforms and this hybrid sampling business makes that difficult. This calls for a complete do-over of our regression algorithms and several other important processing algorithms. I developed the idea for the regression algorithm (called 2-speed Optimal Filter) mathematically, performed preliminary testing, implemented it into code and validated it. In addition to this algorithm, most other algorithms had to be modified to accommodate this new hybrid sampling procedure.
+**Example 1:**
+
+**Here I describe one avenue where I contributed extensively (about 2000+ lines of code additions).** The new data for SuperCDMS will be taken with two different sampling frequencies in the same waveform (check figure below). In the figure, the waveform on the left has its tails on the left and right of the peak downsampled by a factor of 16 (by averaging every 16 data points). This "hybrid" waveform you get after downsampling is shown on the right. All our regression is performed in frequency domain with Fourier transforms and this hybrid sampling business makes that difficult. This calls for a complete do-over of our regression algorithms and several other important processing algorithms. I developed the idea for the regression algorithm (called 2-speed Optimal Filter) mathematically, performed preliminary testing, implemented it into code and validated it. In addition to this algorithm, most other algorithms had to be modified to accommodate this new hybrid sampling procedure.
 
 ![From normal pulse to hybrid pulse]({{'/assets/img/Hybrid_pulse_demo.png' | relative_url}})
 
@@ -95,10 +97,12 @@ The SuperCDMS Data Acquisition Software (SuperCDMS DAQ) also consists of many su
 
 I am a developer for MidasDAQ and the official release manager for the umberella package SuperCDMS DAQ. I organize and coordinate timely release of the DAQ package, collecting tages for the sub-packages and performing a gitflow based version tagged release. We use the jira issue tracking system for bug reports and tracking. 
 
+**Example 2:**
 Below is an example of a stability monitoring function I wrote for the MidasDAQ. The function gets called every few seconds to query the High voltage supply which applies a voltage on the detector, checks if the current across the detector is below a preset threshold, issues an error message if the current is too large and follows up by turning off the power supply in case of emergencies. Note that a current across the detector can be quite disastrous for an expensive equipment.
 
 ![Example function]({{'/assets/img/DAQ_snippet1.png' | relative_url}})
 
+**Example 3**
 Here is another function which retrieves the CPLD hardware version from our Detector Control and Readout Card (DCRC) and writes it to our web interface called the ODB interface. Retrieving the versions requires reading and writing to specific registers on the DCRC which you can see in the code:
 
 ![Example function]({{'/assets/img/DAQ_snippet2.png' | relative_url}})

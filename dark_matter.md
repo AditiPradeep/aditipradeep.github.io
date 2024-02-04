@@ -2,7 +2,9 @@
 title: ML reconstruction of SuperCDMS data
 ---
 
-Disclaimer: The amount of information in this page will be limited since I have restrictions on how much I can share before we publish the results. Once the results are published, I'll link the paper for more details.
+*Disclaimer: The amount of information in this page will be limited since I have restrictions on how much I can share before we publish the results. Once the results are published, I'll link the paper for more details.*
+
+**The work described here was done entirely in python using LightGBM, scikit-learn, numpy, scipy and matplotlib. Initial tests were done with Tensorflow but the Gradient Boosted Decision tree outperformed the Multi-layer perceptron for our data.** 
 
 The idea is as follows:
 
