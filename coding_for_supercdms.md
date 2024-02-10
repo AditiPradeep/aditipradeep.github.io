@@ -9,7 +9,7 @@ I am an active software developer for SuperCDMS's data processing packages and d
 
 Our data is noisy and often times to study reconstruction algorithms, one has to simulate realistic noise. If one constructs the Power Spectral Density (PSD) of the noise, Monte Carlo sampling can be used to sample noise waveforms from the PSD. If there is correlation in noise between a few detector channels of interest a [cross PSD](https://en.wikipedia.org/wiki/Spectral_density#Cross_power_spectral_density) can be constructed and similarly sampled from to simulate more realistic noise waveforms. Here is a python package which wrote that performs this function: [NoiseGen repository](https://gitlab.com/AditiPradeep/noisegen).
 
-Most of our data analysis is run in jupyter environments on scientific computing acilities using common python libraries and some SuperCDMS specific libraries. Common tasks include regression of various quantities, optimization and data enrichment. Here is an example of a Machine learning task I performed: [ML for dark matter searches]({{ '/dark_matter'| relative_url}})
+Most of our data analysis is run in jupyter environments on scientific computing facilities using common python libraries and some SuperCDMS specific libraries. Common tasks include regression of various quantities, optimization and data enrichment. Here is an example of a Machine learning task I performed: [ML for dark matter searches]({{ '/dark_matter'| relative_url}})
 
 # C++ coding experience with SuperCDMS
 
@@ -29,7 +29,12 @@ BatCommon is the package where data analyses classes, data reading classes and u
 
 ![From normal pulse to hybrid pulse]({{'/assets/img/Hybrid_pulse_demo.png' | relative_url}})
 
-In the code I show below, "OP" or "On-Pulse" or "fast" refers to the non-downsampled part just around the peak. The "DS" or "Downsampled" pulse refers to what you would get if you uniformly downsampled the whole trace without leaving out the OP region. The algorithm I developed is callled the 2-Speed Optimal Filter. Here is a copy of the BatCommon class I wrote for this: [Example 2-speed Optimal Filter Class]({{ '/OptimalFilterPhononTwoSpeed.cxx' | relative_url}}). This class is used in the following CDMSBats snippet under another class called EventBuilder in BatRoot:
+```
+The overall algorithm follows this flowchart. In the code I show below, "OP" or "On-Pulse" or "fast" refers to the non-downsampled part just around the peak. The "DS" or "Downsampled" pulse refers to what you would get if you uniformly downsampled the whole trace without leaving out the OP region. The algorithm I developed is callled the 2-Speed Optimal Filter.
+
+![Code snippet flow chart]({{'/assets/img/2SOF_flowchart.png' | relative_url}})
+
+Here is a copy of the BatCommon class I wrote for this: [Example 2-speed Optimal Filter Class]({{ '/OptimalFilterPhononTwoSpeed.cxx' | relative_url}}). This class is used in the following CDMSBats snippet under another class called EventBuilder in BatRoot:
 
 ```C++
 #include "OptimalFilterPhononTwoSpeed.h"
@@ -91,11 +96,6 @@ void EventBuilder::DoOptimalFilterPhononTwoSpeed(int detNum, const string& senso
     } //end if detNum found in map
   return; 
 }
-
-```
-The object calls in the above snippet follow this flow chart: 
-
-![Code snippet flow chart]({{'/assets/img/2SOF_flowchart.png' | relative_url}})
 
 ## Data Acquisition software
 
