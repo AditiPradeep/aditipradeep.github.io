@@ -31,7 +31,7 @@ I conceptualized the regression algorithm, dubbed the "2-speed Optimal Filter," 
 
 ![From normal pulse to hybrid pulse]({{'/assets/img/Hybrid_pulse_demo.png' | relative_url}})
 
-```
+
 The overall algorithm follows this flowchart. In the code I show below, "OP", "On-Pulse" or "fast" refers to the non-downsampled part just around the peak. The "DS" or "Downsampled" pulse refers to what you would get if you uniformly downsampled the whole trace without leaving out the OP region. The algorithm I developed is callled the 2-Speed Optimal Filter.
 
 ![Code snippet flow chart]({{'/assets/img/2SOF_flowchart.png' | relative_url}})
@@ -98,6 +98,8 @@ void EventBuilder::DoOptimalFilterPhononTwoSpeed(int detNum, const string& senso
     } //end if detNum found in map
   return; 
 }
+
+```
 
 ## Data Acquisition software
 
